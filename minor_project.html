@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <title>Pizza Restraunt</title>
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;;
+            background-image:url(https://img.freepik.com/premium-photo/italian-pizza-restaurant-table_261378-1784.jpg?w=826);
+            width: 100%;
+            height: 100%;
+            min-height: 100%;
+            /* display: flex;
+            flex-direction: column; */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-size: 100% 100%;
+            /* filter: blur(10px);
+           -webkit-filter: blur(10px);
+           backdrop-filter: blur(20%); */
+        }
+        body::before {
+            content: "";
+            background: inherit;
+            filter:brightness(60%); /* Adjust the blur amount as needed */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;  /*Place it behind the content*/
+        }
+        html{
+            scroll-behavior: smooth;
+            height: 100%;
+        }
+        
+        /*-----------------------------------------------*/
+       /* HEADER DESIGN START */
+        header{
+               color: aliceblue;
+               /* background-color: black; */
+               position:fixed;
+               left: 0;
+               top: 0;
+               width: 100%;
+               font-size: 20px;
+               height: 100px;
+               /* overflow-x: auto; */
+               background-color: rgba(0, 0, 0, 0.5);
+        }
+        .a1{
+            /* color: aliceblue; */
+            display: flex;
+            flex-direction: row;
+            margin-top: 35px;
+            padding-left: 700px;
+
+            /* justify-content: space-between; didnt use this cuz we cant control the space between them hence using div tag to adjust space */
+        }
+        .a1 >*{
+            padding-left: 50px;
+            /* ' .a1 >*'  selects all direct child elements of .a1 and applies a 10px left padding to each one, creating space between them. You can adjust the padding value to your desired spacing. */
+
+        }
+        #y{
+            position:absolute;
+            left: 15px;
+            bottom: 22px;
+            font-size: 40px;
+        }
+        #a{
+            text-decoration:none;
+            color: aliceblue;
+        }
+        #b{
+            text-decoration:none;
+            color: aliceblue;
+        }
+        #c{
+            text-decoration:none;
+            color: aliceblue;
+        }
+        #d{
+            text-decoration:none;
+            color: aliceblue;
+        }
+        #a:hover{
+            text-decoration: underline;
+            text-underline-offset: 12px;
+            /* text-decoration-thickness: 2px; */
+        }
+        #b:hover{
+            text-decoration: underline;
+            text-underline-offset: 12px;
+            /* text-decoration-thickness: 2px; */
+        }
+        #c:hover{
+            text-decoration: underline;
+            text-underline-offset: 12px;
+            /* text-decoration-thickness: 2px; */
+        }
+        #d:hover{
+            text-decoration: underline;
+            text-underline-offset: 12px;
+            /* text-decoration-thickness: 2px; */
+        }
+         
+        /*HEADER DESIGN END*/
+        /* --------------------------------------------- */
+
+        /* --------------------------------------------- */
+        /*HOME PAGE DESIGN START*/
+        #a2{
+            color: aliceblue;
+            position:absolute;
+            top: 120px;
+            left: 350px;
+        }
+        .f{
+           font-size: 80px; 
+        }
+        .g{
+            font-size: 30px;
+            margin-top: -50px ;
+            font-style: italic;
+        }
+        .h{
+            color: aliceblue;
+            text-decoration: none;
+            font-size: 25px;
+            background-color: transparent;
+            border: 1px solid ;
+            border-radius: 10px;
+        }
+
+        .h:hover{
+            background: rgb(52, 52, 55);
+        }
+        /*HOME PADE DESIGN END */
+        /* --------------------------------------------- */
+        
+        /* --------------------------------------------- */
+        /*MENU SECTION DESIGNING START*/
+        
+        #menu-section {
+        margin-top: 600px;         
+        }
+
+        #menu{
+            color: aliceblue;
+        }
+
+        /* .b1{
+            display: flex;
+
+        } */
+
+        #j1{grid-area:j12;}
+        #j2{grid-area:j13;}
+        #j3{grid-area:j14;}
+        
+        .b1{
+            display:grid;
+            grid-template-areas:"j12 j13 j14";
+            text-align: center;
+            padding: 20px;
+        }
+        .x{
+           width: 350px;
+           height: 500px;
+           padding: 10px;
+           margin: 10px;
+           margin-left: 10px; 
+           background-color:rgba(68, 66, 66, 0.8);
+           box-shadow: 2px 2px 2px gray;
+        }
+        .pic1{
+            /* padding-right: 20px; */
+            /* margin-top:-46px; */
+            max-width:100%;
+            max-height:80%;
+            height: 400px;
+        }
+        .pic2{
+            /* padding-right: 20px; */
+            max-width:100%;
+            max-height:80%;
+            height: auto;
+        }
+        .pic3{
+            /* padding-right: 20px; */
+            max-width:80%;
+            /* max-height:80%; */
+            height:400px;
+        }
+        a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        /* MENU SECTION DESIGN END */
+        /* --------------------------------------------- */
+
+        /* --------------------------------------------- */
+        /* FOOTER DESIGN START*/
+        h5{
+            color: rgb(235, 130, 11);
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 25px;
+    
+        }
+        /* FOOTER DESIGN END */
+        /* --------------------------------------------- */
+
+        /* --------------------------------------------- */
+        /* ABOUT DESIGN START */
+
+        #about{
+            margin-bottom: 100px;
+            margin-top: 200px;
+            /* position: fixed;            */
+        }
+
+       
+        #aboutus{
+            color: rgb(11, 11, 11);
+
+        }
+
+        .abt-con{grid-area:abt-con1;}
+        .abt-text{grid-area:abt-text1;}
+
+        #gr{
+            display:grid;
+            grid-template-areas:"abt-con1 abt-text1";
+            /* text-align: center; */
+            /* padding: 20px; */
+
+        }
+        
+        .x1{
+            /* width: ; */
+            height: 500px;
+            /* padding: 5px; */
+           margin: 0.1px;
+           /* margin-left: 10px;  */
+           background-color:rgb(255, 235, 205,0.8);
+
+        }
+        
+        .m1{
+            text-align: center;
+            margin-right:20px ;
+        }
+        .m2{
+            text-align:inherit;
+            padding: 25px;
+            font-size: 17px;
+        }
+
+        .m3{
+            width: 500px;
+            height:500px;
+        }
+       
+        /* ABOUT DESIGN END */
+        /* ----------------------------------------------*/
+
+</style>
+</head>
+<body>
+
+    <!--HEADER HTML-->
+    <div align="center">
+        <header> 
+            <div id="y">Pizzamia</div>
+                <div class="a1">
+                    <a href="" id="a">Home</a>
+                    <a href="#menu-section" id="b">Menu</a>
+                    <a href="#about" id="c">About Us</a>
+                    <a href="mp_contact.html" id="d">Contact Us</a>
+                </div>
+       </header>   
+    </div>
+
+    <!--HOME PAGE HTML-->
+    <div align="center">
+        <div id="a2">
+            <h1 class="f">Pizzamia</h1>
+            <h2 class="g">"Bless your taste buds with every bite"</h2>
+            <a href="mp_signin.html"><button class="h">Sign in</button></a>
+        </div>
+    </div>
+
+    <!--MENU PAGE HTML-->
+    <div id="menu-section">
+        <div align="center" id="menu">
+            
+            <h1><u>Our Menu</u></h1>
+
+        <div class="b1">
+            <h2 id="j1" class="x"><a href="https://www.dominos.co.in/menu/veg-pizzas">veg pizza</a><img class="pic1" src="https://images.pexels.com/photos/6072095/pexels-photo-6072095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" ></h2>
+
+            <h2 id="j2" class="x"><a href="https://www.dominos.co.in/menu/non-veg-pizzas">non-veg pizza</a><img class="pic2" src="https://images.pexels.com/photos/9957549/pexels-photo-9957549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" ></h2>
+            
+            <h2 id="j3" class="x"><a href="dominos.co.in/menu/pizza-mania">combos</a><img class="pic3" src="https://static.menasa.net/614474dca77ad1c91c9a1f5b/media/373A2525-min_1665315544551_kzsEF.jpg"></h2>
+        </div>
+            
+            
+        </div>
+    </div>
+
+    <!-- ABOUT US PAGE HTML -->
+    <div id="about">
+        <div id="aboutus">
+           <div id="gr">
+                <div class="abt-con x1">
+                     <img class="m3" src="https://images.pexels.com/photos/8629119/pexels-photo-8629119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+                </div>
+
+                    <div class="abt-text x1">
+                        <h1 class="m1">About Us</h1>
+                        <p class="m2">Pizzamia, a name synonymous with pizza perfection, has been delighting taste buds for over a decade. We're more than just a pizzeria; we're culinary artisans on a mission to redefine your pizza experience.
+
+                            At Pizzamia, quality is our top priority. Our chefs craft each pizza with passion and precision, using the freshest, handpicked ingredients. From the classic Margherita to our signature gourmet creations, every pizza is a flavor-packed masterpiece. Our commitment to excellence doesn't stop there; we also take pride in our warm and inviting ambiance, making Pizzamia the perfect spot for gatherings, celebrations, and cozy family dinners.
+                            
+                            We understand that pizza isn't just food; it's a universal symbol of togetherness and joy. That's why we've dedicated ourselves to crafting the perfect slice, each bite delivering a burst of happiness.
+                            
+                            Join us at Pizzamia, where culinary expertise meets warm hospitality. Whether you're savoring our iconic pizzas or exploring our diverse menu, we're here to make your dining experience a memorable one. Come, be a part of our pizza-loving family, and let's create delicious moments together.</p>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER PAGE HTML -->
+    <div align="center">
+        <footer>
+            <h5>copyright &copy;2023 | Pizzamia | made by Zahabiya</h5>
+        </footer>
+    </div>
+    
+</body>
+</html>
